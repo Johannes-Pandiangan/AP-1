@@ -9,12 +9,12 @@ int main()
     cin>>nilai;
 
     /*
-    //if statement
+    //if statement, menjalankan program menurut kondisi yang diinginkan
     if (nilai <= 65){
         cout<<"Anda tidak lulus"<<endl;
     }
 
-    //if-else
+    //if-else, menjalankan program menurut kondisi yang diinginkan, tetapi akan menjalankan program lain jika kondisi tak terpenuhi
     if (nilai <= 65){
         cout<<"Anda tidak lulus"<<endl;
     }
@@ -22,7 +22,7 @@ int main()
         cout<<"Anda lulus !"<<endl;
     }
 
-    //if else if statement
+    //if else if statement, untuk yang memiliki kondisi lebih dari satu
     if (nilai == 100){
         cout<<"Anda kece!"<<endl;
     }
@@ -33,7 +33,7 @@ int main()
         cout<<"Anda lulus"<<endl;
     }
 
-    //nested if
+    //nested if, if didalam if 
     if (nilai <= 65){
         cout<<"Anda tidak lulus"<<endl;
     }
@@ -45,7 +45,7 @@ int main()
         }
     }
 
-    //switch case
+    //switch case, digunakan ketika terlalu banyak kondisi (lebih efektif dibanding if, jika kondisinya sangat banyak)
     switch (nilai){
         case 1:
             cout<< "Senin" <<endl;
@@ -73,7 +73,7 @@ int main()
             break;
     }
 
-    //switch range
+    //switch range, sama seperti switch case, beda cuma ini merupakan rentang nilai
     switch (nilai) {
         case 85 ...100 : cout << "A" <<endl;break;
         case 80 ... 84 : cout << "B+" <<endl;break;
@@ -84,7 +84,7 @@ int main()
         default: cout<<"E"<<endl;break;
     }
 
-    //ternary operator
+    //ternary operator, operator yang melibatkan 3 operand
     if (nilai % 2 == 0){
         cout<<"Genap nich"<<endl;
     } else {
