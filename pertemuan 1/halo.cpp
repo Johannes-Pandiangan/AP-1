@@ -6,15 +6,20 @@ int main()
 {
     string nama;
     char kom,JK; 
-    int nim,ip;
+    int nim,ip; //pendeklarasian variabel
+    
     /*ini untuk komentar yang 
     beberapa baris*/
-    cout<<"hello world";
+    
+    cout<<"hello world"; //cout -> menampilkan
     cout<<"\nmasukkan nama: ";
     getline(cin, nama); //agar karakter spasi bisa terbaca (pengganti cin)
-    cout<<"masukkan KOM:";cin>>kom;
-    cout<<"masukkan NIM:";cin>>nim;
-    cout<<"masukkan IP:";cin>>ip;
+    cout<<"masukkan KOM:";
+    cin>>kom; //cin -> menerima inputan
+    cout<<"masukkan NIM:";
+    cin>>nim;
+    cout<<"masukkan IP:";
+    cin>>ip;
     cout<<"masukkan jenis kelamin(L/P): ";
     JK = getche(); //agar karakter langsung tampil, jadi ga perlu tekan enter
 
