@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
 
-string namaGlobal ="Ilmu";
+string namaGlobal ="Ilmu"; //variabel global, bisa diakses dimana saja
 
 void namaVariabel(){
-    string namaLokal = "Komputer";
+    string namaLokal = "Komputer"; //variabel lokal, cuma bisa diakses pada bagian fungsi ini saja
 
     //coba akses
     cout<<namaLokal<<endl;
