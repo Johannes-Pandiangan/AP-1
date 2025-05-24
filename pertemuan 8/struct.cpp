@@ -3,6 +3,8 @@
 #include<vector>
 using namespace std;
 
+//struct untuk mengumpulkan data dengan tipe data yang berbeda (record dalam pascal)
+//cara mendeklarasikan struct
 struct Alamat{
     string jalan;
     string kota;
@@ -18,15 +20,18 @@ struct Mahasiswa {
 
 int main(){
     system("cls");
-    Mahasiswa mhs1;
+    Mahasiswa mhs1; //untuk mengakses struct
 
+    //mengisi data sesuai dengan tipe data pada struct:
     // mhs1.alamat.jalan = "Jalan Jamin Ginting";
     // mhs1.alamat.kota = "Medan";
-    // mhs1.alamat.kodePos = 20155;
+    // mhs1.alamat.kodePos = 20155; 
 
+    //menampilkan data yang ada pada struct tadi
     // cout<<"Alamat : "<<mhs1.alamat.jalan<<" "<<mhs1.alamat.kota<<" "<<mhs1.alamat.kodePos<<endl;
 
-    vector<Mahasiswa>mahasiswa;
+    //menggunakan struct dalam vector
+    vector<Mahasiswa>mahasiswa; 
     int n;
     cout<<"Masukkan banyak mahasiswa : ";
     cin>>n;
@@ -53,5 +58,4 @@ int main(){
         cout<<"Umur : "<<mahasiswa[i].umur<<endl;
         cout<<"IPK : "<<mahasiswa[i].ipk<<endl;
     }
-
 }
