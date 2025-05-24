@@ -1,7 +1,9 @@
 #include<iostream> //bawaan
 #include<cmath> //bawaan
-#include"headercustom.h" //header yang buat sendiri
+#include"headercustom.h" //header yang buat sendiri, untuk mengakses file .h
 u;
+/* u diatas adalah semula using namespace std; yang telah diganti namanya pada file headercustom.h
+    sama seperti return telah diganti jadi r, dan juga yang lainnya bisa kita lihat pada file headercustom.h*/
 
 int jumlah(int a,int b){
     r a + b;
