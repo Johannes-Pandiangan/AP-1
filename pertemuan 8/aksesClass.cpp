@@ -2,11 +2,11 @@
 using namespace std;
 
 class ContohAkses {
-    private:
+    private: //hanya bisa diakses oleh anggota dalam class yang sama
         int privateVar;
-    protected:
+    protected: //bisa diakses pada class yang sama dan class turunannya
         int protectedVar;
-    public:
+    public: //dapat diakses pada berbagai class
         int publicVar;
 
     //constructor
@@ -16,6 +16,7 @@ class ContohAkses {
         publicVar=3;
     }
 
+    //dapat mangakses semua jenis class 
     void tampilkanSemua(){
         cout << "Akses dari dalam class : "<<endl;
         cout << privateVar<<endl;
@@ -29,7 +30,7 @@ class Turunan : public ContohAkses {
     void aksesProtected(){
         cout<<protectedVar <<endl;
         cout<<publicVar<<endl;
-        //cout<<privateVar<<endl;
+        //cout<<privateVar<<endl; ,tidak bisa mengakses class private pada class turunan
     }
 };
 
@@ -39,11 +40,12 @@ int main(){
     obj.tampilkanSemua();
 
     cout<<"\nAkses dari luar class: "<<endl;\
-    //cout<< obj.privateVAr <<endl;
-    //cout << obj.protectedVar <<endl;
-    cout << obj.publicVar <<endl;
+    //cout<< obj.privateVAr <<endl;, class private tidak dapat diakses dari class luar
+    //cout << obj.protectedVar <<endl;, class protected juga tidak dapat diakses 
+    cout << obj.publicVar <<endl; //class public dapat diakses, karena seperti penjelasan diatas (dapat diakses oleh semua class)
 
-    cout<<"\nAkses dari kelas turunan : "<<endl;
+    //yang dapat diakses pada class turunan adalah protected dan public
+    cout<<"\nAkses dari kelas turunan : "<<endl; 
     Turunan tur;
     tur.aksesProtected();
 }
