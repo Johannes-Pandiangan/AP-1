@@ -1,17 +1,17 @@
 #include<iostream>
 using namespace std;
 
-//fungsi tanpa nilai balikan 
+//fungsi tanpa nilai balikan, biasanya cuma menampilkan
 void tampilkanPesan(){
     cout<<"==== SELAMAT DATANG DI AP 1 ===="<< endl;
 }
 
-//fungsi dengan nilai balikan
-int tambah(int a, int b){
+//fungsi dengan nilai balikan, biasanya digunakan untuk melakukan operasi perhitungan
+int tambah(int a, int b){ //ini menggunakan parameter formal
     return a + b;
 }
 
-//fungsi overload
+//fungsi overload, yaitu ketika nama fungsinya sama tetapi parameternya berbeda
 int kali(int a, int b){
     return a*b;
 }
@@ -33,11 +33,11 @@ int main(){
     system("cls");
 
     //menggunakan fungsi tanpa nilai balikan
-    tampilkanPesan();
+    tampilkanPesan(); //memanggil fungsi yang diatas tadi
 
     int x=5,y=3;
     //menggunkaan fungsi dengan nilai balikan
-    int hasilTambah = tambah(x,y);
+    int hasilTambah = tambah(x,y); //ini menggunakan parameter aktual
     cout<<"Hasil penjumlahan : "<<hasilTambah<<endl;
 
     //menggunakan fungsi overload
